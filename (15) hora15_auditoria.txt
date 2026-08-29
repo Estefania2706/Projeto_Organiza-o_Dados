@@ -1,0 +1,40 @@
+-- 1. Criar a tabela de produtos específica para este exercício
+CREATE TABLE Produtos_Auditoria (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    preco DECIMAL(10,2)
+);
+
+-- 2. Criar a tabela de auditoria (O Livro de Visitas)
+CREATE TABLE Auditoria_Precos_Nova ( 
+    produto_id INT, 
+    preco_antigo DECIMAL(10,2), 
+    preco_novo DECIMAL(10,2), 
+    data_alteracao TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+); 
+
+-- 3. Criar a Função do Porteiro (Regra)
+CREATE OR REPLACE FUNCTION registar_alteracao_nova()  
+RETURNS TRIGGER AS $$ 
+BEGIN 
+    -- Verifica se o preço realmente mudou antes de registar
+    IF OLD.preco IS DISTINCT FROM NEW.preco THEN
+        INSERT INTO Auditoria_Precos_Nova (produto_id, preco_antigo, preco_novo) 
+        VALUES (OLD.id, OLD.preco, NEW.preco); 
+    END IF;
+    RETURN NEW; 
+END; 
+$$ LANGUAGE plpgsql; 
+
+-- 4. Criar o Gatilho (Trigger - O Porteiro Automático)
+CREATE TRIGGER porteiro_precos_novo
+AFTER UPDATE ON Produtos_Auditoria 
+FOR EACH ROW 
+EXECUTE FUNCTION registar_alteracao_nova();
+
+-- 5. Teste Prático (Inserção e Alteração para ativar o gatilho)
+INSERT INTO Produtos_Auditoria (nome, preco) VALUES ('Livro A', 10.00);
+UPDATE Produtos_Auditoria SET preco = 15.00 WHERE nome = 'Livro A';
+
+-- 6. Consulta de Verificação (Gera o resultado do printscreen)
+SELECT * FROM Auditoria_Precos_Nova;
