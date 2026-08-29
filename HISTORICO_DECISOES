@@ -1,0 +1,15 @@
+# Histórico de Decisões - Projeto Organização de Dados
+
+Este diário regista as grandes decisões arquiteturais tomadas ao longo do desenvolvimento do sistema.
+
+## 1. Sistema de Segurança e Auditoria (Hora 15)
+* **Decisão:** Criação de tabelas autónomas (`Produtos_Auditoria`) e isolamento do histórico de auditoria (`Auditoria_Precos_Nova`).
+* **Motivo:** Garantir a integridade dos dados antigos da Organização e criar um mecanismo de rastreio imutável por gatilho (*Trigger*) que impede alterações de preços sem supervisão.
+
+## 2. Dashboard de Gestão e Business Intelligence (Hora 20)
+* **Decisão:** Implementação de uma `VIEW` analítica (`Relatorio_Vendas_Mensal`) e filtro de stock crítico (`WHERE stock < 5`).
+* **Motivo:** Abstrair a complexidade do SQL para a Direção, permitindo a ligação automática ao Excel (Gestão por Exceção) e garantindo alertas imediatos de rutura de stock.
+
+## 3. Conclusão e Entrega da Infraestrutura (Hora 24)
+* **Decisão:** Lançamento da versão oficial `v1.0`.
+* **Motivo:** Transição do projeto do estado de desenvolvimento para produção estável.
