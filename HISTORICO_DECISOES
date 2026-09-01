@@ -13,3 +13,8 @@ Este diário regista as grandes decisões arquiteturais tomadas ao longo do dese
 ## 3. Conclusão e Entrega da Infraestrutura (Hora 24)
 * **Decisão:** Lançamento da versão oficial `v1.0`.
 * **Motivo:** Transição do projeto do estado de desenvolvimento para produção estável.
+
+## 4. Plano de Contingência e Disaster Recovery (Hora 28)
+* **Data:** 01-09-2026
+* **Decisão:** Implementamos o Protocolo "3-2-1", no Neon, no disco e disco-externo da empresa e no Google Drive.
+* **Porquê:** Plano de Sobrevivência (Disaster Recovery).
