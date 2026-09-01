@@ -9,3 +9,11 @@ Este é o repositório oficial do sistema de gestão da Organização. Aqui guar
 
 ## Compromisso do Engenheiro (Juramento Final)
 *Prometo que, a partir de hoje, não farei nenhuma alteração 'de improviso' na base de dados. Prometo que cuidarei dos dados dos nossos clientes como se fossem os meus. Prometo que documentarei o meu trabalho para que quem venha a seguir não sofra como eu sofri a aprender.*
+
+## Resumo das Entregas Finais (Horas 15, 20 e 28)
+* **Segurança (Hora 15):** Sistema de auditoria automática de preços via *Trigger*.
+* **Dashboard (Hora 20):** `VIEW Relatorio_Vendas_Mensal` para relatórios e alerta de stock crítico.
+* **Plano de Sobrevivência (Hora 28):** Implementação do protocolo 3-2-1.
+
+## O que fazer se tudo arder?
+"Corram o ficheiro `schema.sql` e `data.sql` que está nesta pasta."
