@@ -1,19 +1,18 @@
-Este é o repositório oficial do sistema de gestão da Organização. Aqui guardaremos toda a estrutura da nossa base de dados.
-# Projeto Organização de Dados - v1.0
+# Projeto Organização de Dados - Conclusão Final
 
-## O que o Sistema Faz (Roteiro da Vitória)
+Este repositório contém toda a infraestrutura de Engenharia de Dados desenvolvida para a Organização, marcando a conclusão com sucesso do percurso prático do módulo **UFCD 10797**.
 
-1. **Dashboard de Gestão (BI):** Disponibiliza a `VIEW Relatorio_Vendas_Mensal` que consolida as faturas automaticamente por mês, permitindo à Direção atualizar relatórios no Excel com um único clique.
-2. **Semáforo de Alerta:** Filtro automatizado de stock crítico (`stock < 5`) para prevenção ativa de ruturas de stock.
-3. **Auditoria de Segurança:** Um porteiro automático (*Trigger*) vigia a tabela de produtos e grava todas as alterações de preços na tabela `Auditoria_Precos_Nova` com data e hora exatas.
+# Ecossistema de Dados Implementado
+* **Segurança Avançada (Hora 15):** Sistema imutável de auditoria automática de preços via *Trigger* (`schema.sql`).
+* **Business Intelligence (Hora 20):** `VIEW Relatorio_Vendas_Mensal` integrada para dashboards analíticos automatizados e alertas de stock crítico (`stock < 5`).
+* **Plano de Resiliência (Hora 28):** Protocolo de Disaster Recovery "3-2-1" com ficheiros autónomos de restauro rápido (`schema.sql` e `data.sql`).
+* **Comunicação Executiva (Hora 32):** Scripts de extração diária otimizada e documentação analítica cirúrgica em `GUIOES_COMUNICACAO.md`.
 
-## Compromisso do Engenheiro (Juramento Final)
-*Prometo que, a partir de hoje, não farei nenhuma alteração 'de improviso' na base de dados. Prometo que cuidarei dos dados dos nossos clientes como se fossem os meus. Prometo que documentarei o meu trabalho para que quem venha a seguir não sofra como eu sofri a aprender.*
+# Artefactos de Autonomia Operacional (Hora 36)
+Para garantir a continuidade do negócio sem dependência técnica direta:
+1. **`COMO_FUNCIONA.txt`:** Guia prático de utilizador para atualizações no Excel e procedimentos de erro.
+2. **`O_QUE_FIZEMOS.txt`:** Relatório quantitativo de otimizações e poupança de tempo para a Gestão.
+3. **`FUTURO_ORGANIZAÇÃO.txt`:** Roadmap e visão estratégica de automação tecnológica para 2027.
 
-## Resumo das Entregas Finais (Horas 15, 20 e 28)
-* **Segurança (Hora 15):** Sistema de auditoria automática de preços via *Trigger*.
-* **Dashboard (Hora 20):** `VIEW Relatorio_Vendas_Mensal` para relatórios e alerta de stock crítico.
-* **Plano de Sobrevivência (Hora 28):** Implementação do protocolo 3-2-1.
-
-## O que fazer se tudo arder?
-"Corram o ficheiro `schema.sql` e `data.sql` que está nesta pasta."
+---
+*Projeto concluído com sucesso e versionado sob a Tag estável v2.0.*
