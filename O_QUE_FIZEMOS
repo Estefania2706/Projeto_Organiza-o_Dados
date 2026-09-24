@@ -1,0 +1,5 @@
+REGISTO DE MELHORIAS - 2026
+
+Semana 1: Automatização do processo de backup e disaster recovery via Cloud (Neon) e GitHub (Poupança estimada: 30 min/semana).
+Semana 2: Criação da VIEW do Painel de Vendas Mensal interativo ligado diretamente ao Excel (Poupança estimada: 1 hora/semana em cálculos manuais).
+Semana 3: Implementação de permissões restritas e logs de auditoria via Trigger contra eliminação ou alteração acidental de preços.
