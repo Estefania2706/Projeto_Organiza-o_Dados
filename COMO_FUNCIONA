@@ -1,0 +1,10 @@
+GUIA DE UTILIZADOR - ORGANIZAÇÃO
+
+1. VER RELATÓRIO DE VENDAS:
+   Abrir o Excel 'Painel_Vendas.xlsx'. Ir ao menu 'DADOS' -> clicar em 'ATUALIZAR TUDO'.
+
+2. FAZER BACKUP / RECUPERAÇÃO:
+   Em caso de falha, aceder aos ficheiros 'schema.sql' e 'data.sql' presentes no repositório para repor o sistema na nuvem (Neon Console) em menos de 5 minutos.
+
+3. SE DER ERRO:
+   Verificar se o computador tem ligação à Internet. Se não resolver, enviar e-mail com o erro para [email@empresa.com].
