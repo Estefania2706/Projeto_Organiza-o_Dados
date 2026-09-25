@@ -16,3 +16,10 @@ Para garantir a continuidade do negócio sem dependência técnica direta:
 
 ---
 *Projeto concluído com sucesso e versionado sob a Tag estável v2.0.*
+
+
+# Gestão de Incidentes e Continuidade Cloud (Hora 44)
+* **Controlo de Incidentes:** Criação da tabela `tb_log_incidentes` para registar e auditar erros diretamente no sistema.
+* **Calendário Fixo:** Rotinas de diagnóstico à segunda-feira e manutenção mensal por `VACUUM ANALYZE`.
+* **Protocolo SLA:** Definição de guiões de comunicação transparentes para a gestão executiva face a falhas de serviço.
+
