@@ -1,0 +1,8 @@
+=========================================================
+PROTOCOLO DE COMUNICAÇÃO DE CRISE E SLA - UFCD 10797
+=========================================================
+
+Objetivo: Garantir total transparência técnica e rapidez em caso de indisponibilidade temporária.
+
+Guião de Comunicação Oficial com a Direção Geral:
+"Detetámos uma indisponibilidade temporária na ligação ao endpoint PostgreSQL na nuvem. O protocolo de recuperação já foi iniciado através do painel de controlo Neon (alternância de Branch / Restauro PITR). Prevemos o restabelecimento total em poucos minutos, sem perda de integridade dos dados registados."
