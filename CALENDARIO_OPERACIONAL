@@ -1,0 +1,16 @@
+=========================================================
+CALENDÁRIO OPERACIONAL DE GESTÃO CLOUD - UFCD 10797
+=========================================================
+
+• Segunda-Feira (09:00 - 09:10) — Diagnóstico de Arranque:
+  - Validar se o Compute Endpoint no Neon Console transitou do estado Idle para Active.
+  - Executar a consulta de monitorização de pg_stat_activity para detetar bloqueios ativos.
+
+• Sexta-Feira (17:00 - 17:15) — Auditoria de Salvaguarda:
+  - Confirmar a existência de snapshots automáticos gerados na plataforma Neon.
+  - Gerar uma cópia lógica externa deslocalizada via terminal com o utilitário pg_dump.
+  - Reportar à Direção o relatório semanal de estabilidade e disponibilidade do serviço.
+
+• 1ª Segunda-Feira do Mês — Manutenção Preventiva:
+  - Correr a reorganização de armazenamento e atualização de estatísticas com VACUUM ANALYZE.
+  - Limpar registos obsoletos e verificar a quota de disco ocupada na consola web.
